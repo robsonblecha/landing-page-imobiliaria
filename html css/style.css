@@ -50,8 +50,7 @@ header{
 
 /*banner e formulario*/
 section.cover-form{
-    width: 100%;
-    padding: 0 2%;
+    width: 100%;  
 }
 
 .bg{
@@ -128,6 +127,18 @@ section.chamada{
     display: inline-block;
 }
 
+/*.icone-seta{
+    position: absolute;
+    left: 50%;
+    top: -32px;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    width: 64px;
+    height: 64px;
+    background-size: 100% 100%;
+    background-image: url('../imagems/arrow.png');*/
+}
+
 section.chamada .container{
     padding: 50px 0;
     background-color: #696060;
@@ -146,8 +157,54 @@ section.chamada p{
     color: white;
 }
 
+/*sessão mosaico de imagens*/
+.flex-mosaico{
+    display: flex;
+}
+
+.item-1-mosaico{
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+}
+
+.item-2-mosaico{
+    background-color: #334b6d;
+    padding: 60px 40px;
+    width: 40%;
+}
+
+.item-2-mosaico p{
+    color: white;
+}
+
+footer{
+    text-align: center;
+    padding: 20px 0;
+}
 
 
+
+/*responsivo*/
+@media screen and (max-width: 960px){
+    .bg{
+        text-align: center;
+    }  
+}
+
+@media screen and (max-width: 768px){
+
+    .flex-mosaico{
+        display: block;
+    }
+    .item-1-mosaico{
+        padding-top: 100%;
+        width: 100%;
+    }
+    .item-2-mosaico{
+        width: 100%;
+    }
+}
 
 
 @media screen and (max-width: 510px){
